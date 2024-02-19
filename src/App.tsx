@@ -1,4 +1,4 @@
-import { Home } from "./pages/Home.tsx";
+import { Home } from "@website/pages/Home.tsx";
 
 export const App = () => {
   return (
