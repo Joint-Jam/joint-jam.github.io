@@ -20,6 +20,7 @@ Miscellaneous notes on less obvious or useful things about the repo.
 - React Router v6 is installed. Make sure you're looking at the right docs.
 - Tailwind CSS is installed.
 - Typings are automatically generated for .css files.
+- clsx can be used to split CSS class strings onto multiple lines and for conditional styling.
 
 ## Folders
 
