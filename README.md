@@ -13,9 +13,10 @@ Steps:
 
 ## Development notes
 
+- ESLint is automatically ran on save for VS Code. Other IDEs may have similar features.
+- React Router v6 is used.
 - Tailwind CSS is installed.
 - Typings are automatically generated for .css files.
-- ESLint is automatically ran on save for VS Code. Other IDEs may have a similar feature.
 
 ## Folders
 
