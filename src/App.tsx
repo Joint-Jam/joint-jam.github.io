@@ -1,9 +1,7 @@
-function App() {
+import { Home } from "./pages/Home.tsx";
+
+export const App = () => {
   return (
-    <>
-      Hello World
-    </>
+    <Home/>
   )
 }
-
-export default App
