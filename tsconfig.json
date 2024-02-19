@@ -8,6 +8,7 @@
 
     // Bundler mode
     "moduleResolution": "bundler",
+    "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -23,9 +24,16 @@
     // Absolute imports
     "baseUrl": ".",
     "paths": {
-      "@website/*": ["src/*"],
-    },
+      "@website/*": ["src/*"]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src",
+    "tailwind.config.ts",
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json",
+    },
+  ],
 }
