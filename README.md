@@ -23,5 +23,6 @@ Steps:
 - public: Website assets. Directly copied to output
 - src/assets: Website assets. Processed by bundler.
 - src/components: Reusable components.
+- src/data: Used to store static data and to reduce hardcoding.
 - src/pages: Individual pages of the website.
 - src/styles: Shared styles. CSS for specific components should be located next to the component.
