@@ -13,8 +13,11 @@ Steps:
 
 ## Development notes
 
+Miscellaneous notes on less obvious things about the repo.
+
+- Absolute imports are used. These are imports prefixed by `@website/`.
 - ESLint is automatically ran on save for VS Code. Other IDEs may have similar features.
-- React Router v6 is used.
+- React Router v6 is installed.
 - Tailwind CSS is installed.
 - Typings are automatically generated for .css files.
 
