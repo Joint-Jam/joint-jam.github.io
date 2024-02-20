@@ -3,5 +3,21 @@
 @tailwind utilities;
 
 body {
-    @apply bg-background text-accent;
+    @apply bg-background text-text;
+    font-family: "chopin";
+}
+
+
+.color-text {
+    background: url(/colors.png) repeat;
+    background-size: 40px;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    background-clip:text;
+}
+
+.color-text-shadow {
+    filter: drop-shadow(-0.5px 0.5px 0px rgba(0, 0, 0, 0.75));
 }
