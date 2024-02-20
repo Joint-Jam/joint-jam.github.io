@@ -25,7 +25,7 @@ export const NavBar = () => {
         "mx-auto my-4 px-4",
         "border-b-2 border-dashed border-accent",
       )}>
-        <div className={"[&>*]:mx-1 flex-none"}>
+        <div className={"flex-none"}>
           <NavItem to={PageUrls.home()} className={"text-2xl font-bold"}>Joint Jam</NavItem>
         </div>
         <div className={"flex text-center"}>
@@ -33,7 +33,7 @@ export const NavBar = () => {
           <NavItem to={PageUrls.home()}>Participating Schools</NavItem>
           <NavItem to={PageUrls.home()}>Sponsors</NavItem>
         </div>
-        <div className={"[&>*]:mx-1 flex-none"}>
+        <div className={"flex-none"}>
           <NavItem to={"https://github.com/joint-jam"}><FontAwesomeIcon icon={faGithub}/></NavItem>
           <NavItem to={PageUrls.home()}><FontAwesomeIcon icon={faItchIo}/></NavItem>
           <NavItem to={PageUrls.home()}><FontAwesomeIcon icon={faDiscord}/></NavItem>
