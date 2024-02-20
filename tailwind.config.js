@@ -19,6 +19,14 @@ export default {
       borderWidth: {
         1: "1px",
       },
+      colors: {
+        'background': {
+          DEFAULT: '#254276',
+          'light': '#41547b',
+          'dark': '#0b2351',
+        },
+        'accent': '#f5f5f5',
+      },
     },
   },
   plugins: [
