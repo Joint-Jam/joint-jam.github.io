@@ -16,7 +16,14 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip:text;
     background-clip:text;
+    transition: all .5s;
 }
+.color-text:not(.color-text:hover) {
+    transform: scale(0.90);
+    filter: grayscale() brightness(20%);
+    transition: all .5s;
+}
+
 
 .color-text-shadow {
     filter: drop-shadow(-0.5px 0.5px 0px rgba(0, 0, 0, 0.75));

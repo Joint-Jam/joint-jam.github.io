@@ -33,10 +33,10 @@ export const NavBar = () => {
             <NavItem className="color-text" to={PageUrls.home()}>PARTICIPATING SCHOOLS</NavItem>
             <NavItem className="color-text" to={PageUrls.home()}>SPONSORS</NavItem>
           </div>
-          <div className={"flex-none color-text"}>
-            <NavItem to={"https://github.com/joint-jam"}><FontAwesomeIcon icon={faGithub}/></NavItem>
-            <NavItem to={PageUrls.home()}><FontAwesomeIcon icon={faItchIo}/></NavItem>
-            <NavItem to={PageUrls.home()}><FontAwesomeIcon icon={faDiscord}/></NavItem>
+          <div className={"flex-none"}>
+            <NavItem className="color-text" to={"https://github.com/joint-jam"}><FontAwesomeIcon icon={faGithub}/></NavItem>
+            <NavItem className="color-text" to={PageUrls.home()}><FontAwesomeIcon icon={faItchIo}/></NavItem>
+            <NavItem className="color-text" to={PageUrls.home()}><FontAwesomeIcon icon={faDiscord}/></NavItem>
           </div>
         </div>
       </nav>
