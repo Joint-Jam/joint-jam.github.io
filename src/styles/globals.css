@@ -3,5 +3,35 @@
 @tailwind utilities;
 
 body {
-    @apply bg-background text-accent;
+    @apply bg-background-dark text-text-dark;
+    font-family: "chopin";
+}
+
+.logo-color {
+    background-color: #fff;
+    background-size: 100%;
+
+    background-clip:text;
+    transition: all .5s;
+}
+
+.color-text {
+    background: url(/colors.png) repeat;
+    background-size: 80px;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    background-clip:text;
+    transition: all .5s;
+}
+.color-text:not(.color-text:hover) {
+    transform: scale(0.90);
+    filter: grayscale() brightness(500%);
+    transition: all .5s;
+}
+
+
+.color-text-shadow {
+    filter: drop-shadow(-0.5px 0.5px 0px rgba(0, 0, 0, 0.75));
 }

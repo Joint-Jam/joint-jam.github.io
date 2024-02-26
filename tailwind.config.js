@@ -1,6 +1,6 @@
 import tailwindScrollbar from "tailwind-scrollbar";
-import defaultTheme from "tailwindcss/defaultTheme";
 import tailwindDebugScreens from "tailwindcss-debug-screens";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 /**
  * @type {import("tailwindcss").Config}
@@ -21,11 +21,16 @@ export default {
       },
       colors: {
         'background': {
-          DEFAULT: '#254276',
-          'light': '#41547b',
-          'dark': '#0b2351',
+          DEFAULT: '#dcdcdc',
+          'light': '#dcdcdc',
+          'dark': '#212121',
         },
-        'accent': '#f5f5f5',
+        'text': {
+          DEFAULT: '#000',
+          'light': '#000',
+          'dark': '#767676',
+        },
+        'accent': "#65acb4",
       },
     },
   },
