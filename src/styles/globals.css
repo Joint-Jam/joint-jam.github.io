@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 body {
-    @apply bg-background text-text;
+    @apply bg-background-dark text-text-dark;
     font-family: "chopin";
 }
 
+.logo-color {
+    background-color: #fff;
+    background-size: 100%;
+
+    background-clip:text;
+    transition: all .5s;
+}
 
 .color-text {
     background: url(/colors.png) repeat;
@@ -20,7 +27,7 @@ body {
 }
 .color-text:not(.color-text:hover) {
     transform: scale(0.90);
-    filter: grayscale() brightness(20%);
+    filter: grayscale() brightness(500%);
     transition: all .5s;
 }
 

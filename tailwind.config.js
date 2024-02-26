@@ -22,10 +22,15 @@ export default {
       colors: {
         'background': {
           DEFAULT: '#dcdcdc',
-          'light': '#FFFFFF',
-          'dark': '#FFFFFF',
+          'light': '#dcdcdc',
+          'dark': '#212121',
         },
-        'text': '#000000',
+        'text': {
+          DEFAULT: '#000',
+          'light': '#000',
+          'dark': '#767676',
+        },
+        'accent': "#65acb4",
       },
     },
   },
