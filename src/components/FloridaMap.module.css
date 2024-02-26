@@ -47,8 +47,26 @@
     box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 
-
 .schoolPin:hover {
     transform: scale(2) rotate(45deg);
     z-index: 1;
+}
+
+.schoolPinLabel {
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    filter: opacity(0%);
+    color: white;
+
+    /* lol text-shadows stack: */
+    text-shadow: 0px 0px 5px #000,
+                 0px 0px 5px #000,
+                 0px 0px 5px #000;
+
+    transition: all 0.5s;
+}
+
+.schoolPin:hover + .schoolPinLabel {
+    filter: opacity(100%);
 }
