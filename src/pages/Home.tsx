@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <><div className="flex justify-center mx-32 ">
       <div className=" px-4 w-1/2">
-        <h1 className="mb-4 text-8xl font-extrabold text-accent">Joint Jam Florida is a state</h1>
+        <h1 className="mb-4 text-8xl font-extrabold text-accent">Joint Jam is the Florida Universites' Game Olympics</h1>
         <p className="mb-4 text-2xl text-white">
         I'm baby jOMO viral photo booth, enim pariatur narwhal cliche same tbh coloring book authentic single-origin coffee tonx. Aliquip blue bottle la croix pug actually fugiat lorem affogato Brooklyn. Incididunt lumbersexual quinoa everyday carry, aesthetic schlitz dolore umami. Nulla woke in, art party bushwick everyday carry cupidatat mlkshk. Sustainable solarpunk chicharrones pitchfork meditation. Enim gorpcore DIY pabst intelligentsia, gluten-free pour-over slow-carb. Dolor veniam sint, franzen in jean shorts green juice lo-fi aesthetic glossier intelligentsia.
           <br></br><br></br>
