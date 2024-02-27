@@ -4,7 +4,17 @@
 
 body {
     @apply bg-background-dark text-text-dark;
-    font-family: "chopin";
+    @font-face {
+        font-family: "Chopin-Light";
+        src: url(/Chopin-Light.ttf);
+    }
+}
+
+h1, h2 {
+    @font-face {
+        font-family: "Gratelos-Display";
+        src: url(/Gratelos-Display.ttf);
+    }
 }
 
 .logo-color {
