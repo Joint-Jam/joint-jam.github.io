@@ -4,6 +4,7 @@
     height: var(--size);
     background: url('/florida.svg') no-repeat center center;
     background-size: contain;
+    
 
 }
 
@@ -70,6 +71,7 @@
     visibility: hidden;
     color: white;
     font-weight: bold;
+    font-size: var(--fsize);
 
     transition: all 0.5s;
 

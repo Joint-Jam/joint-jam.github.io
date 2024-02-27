@@ -13,10 +13,11 @@ const SchoolPin = ({ school, size }: {school: School; size: number}) => {
         "--y": `${school.mapPos[1] * size}px`,
         "--size": `${size / 20}px`,
       } as React.CSSProperties}></Link>
-      <h2 className={styles.schoolPinLabel} style={{
+      <h1 className={styles.schoolPinLabel} style={{
         "--x": `${ size - (size / -80 + school.mapPos[0] * size ) }px`,
         "--y": `${school.mapPos[1] * size - size / 28}px`,
-      } as React.CSSProperties}>{school.name}</h2>
+        "--fsize": `${size / 40}px`,
+      } as React.CSSProperties}>{school.name}</h1>
     </div>
   );
 }
