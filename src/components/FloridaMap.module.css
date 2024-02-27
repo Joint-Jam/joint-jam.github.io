@@ -4,6 +4,7 @@
     height: var(--size);
     background: url('/florida.svg') no-repeat center center;
     background-size: contain;
+
 }
 
 /* .schoolPin {
@@ -71,6 +72,8 @@
     font-weight: bold;
 
     transition: all 0.5s;
+
+    z-index: 2;
 }
 
 .schoolPin:hover + .schoolPinLabel {
