@@ -21,13 +21,13 @@ export const Schools: School[] = [
   {
     name: "University of Central Florida",
     key: "ucf",
-    colors: [ "#000", "#FFC904" ],
+    colors: [ "#FFC904", "#000" ],
     mapPos: [ 0.75, 0.375 ],
   },
   {
     name: "University of Florida",
     key: "uf",
-    colors: [ "#0021A5", "#FA4616" ],
+    colors: [ "#FA4616", "#0021A5" ],
     mapPos: [ 0.625, 0.2 ],
   },
   {
