@@ -4,16 +4,7 @@
     height: var(--size);
     background: url('/florida.svg') no-repeat center center;
     background-size: contain;
-    
-
 }
-
-/* .schoolPin {
-    border-radius: 50%;
-    background: white;
-    background-image: linear-gradient(-45deg, var(--color1) 50%, var(--color2) 50%);
-    mask: radial-gradient(circle at center, transparent 30%, white 31%);
-} */
 
 .schoolPin {
     position: absolute;
