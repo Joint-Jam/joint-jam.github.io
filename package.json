@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\" \"tcm --watch src\"",
+    "dev": "concurrently \"vite\" \"tcm -p '**/*.*css' -w src\"",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -37,6 +37,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "postcss": "^8.4.35",
+    "sass": "^1.71.1",
     "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.4.1",
     "tailwindcss-debug-screens": "^2.2.1",
