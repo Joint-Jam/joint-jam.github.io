@@ -1,6 +1,7 @@
 import type { School } from "@website/data/Schools";
 import { Schools } from "@website/data/Schools";
 import { Link } from "react-router-dom";
+
 import styles from "./FloridaMap.module.scss";
 
 const SchoolPin = ({ school, size }: {school: School; size: number}) => {

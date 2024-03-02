@@ -4,6 +4,7 @@ import logoImage from "@website/assets/jj24logo.png";
 import { PageUrls } from "@website/data/PageUrls.ts";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
+
 import styles from "./NavBar.module.scss";
 
 export const NavBar = () => {
