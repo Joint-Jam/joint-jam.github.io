@@ -1,7 +1,7 @@
-import styles from "@website/components/FloridaMap.module.css";
 import type { School } from "@website/data/Schools";
 import { Schools } from "@website/data/Schools";
 import { Link } from "react-router-dom";
+import styles from "./FloridaMap.module.scss";
 
 const SchoolPin = ({ school, size }: {school: School; size: number}) => {
   return (
@@ -24,8 +24,8 @@ const SchoolPin = ({ school, size }: {school: School; size: number}) => {
 
 export const FloridaMap = ({ size }: {size: number}) => {
   return (
-    <div className={"relative"}>
-      <div className={styles.floridaMap} style={{
+    <div className={styles.map}>
+      <div className={styles.mapImage} style={{
         "--size": `${size}px`,
       } as React.CSSProperties}/>
 

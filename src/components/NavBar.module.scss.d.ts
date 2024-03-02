@@ -1,10 +1,6 @@
-declare const styles: {
-  readonly "centerText": string;
-  readonly "icons": string;
-  readonly "logo": string;
-  readonly "nav": string;
-  readonly "navContent": string;
-  readonly "navItem": string;
-};
-export = styles;
-
+export declare const centerText: string;
+export declare const icons: string;
+export declare const logo: string;
+export declare const nav: string;
+export declare const navContent: string;
+export declare const navItem: string;

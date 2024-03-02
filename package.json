@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\" \"tcm -p '**/*.*css' -w src\"",
+    "dev": "concurrently \"vite\" \"tcm -w src\" \"typed-scss-modules -w src\"",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -42,6 +42,7 @@
     "tailwindcss": "^3.4.1",
     "tailwindcss-debug-screens": "^2.2.1",
     "typed-css-modules": "^0.8.1",
+    "typed-scss-modules": "^8.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^4.3.1"
