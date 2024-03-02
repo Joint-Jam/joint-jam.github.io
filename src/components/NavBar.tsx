@@ -1,45 +1,31 @@
 import { faDiscord, faGithub, faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logoimg from "@website/assets/jj24logo.png";
+import logoImage from "@website/assets/jj24logo.png";
 import { PageUrls } from "@website/data/PageUrls.ts";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-
-const NavItem = ({ children, to, className = "" }: {children: React.ReactNode; to: string; className?: string}) => {
-  return (
-    <Link to={to} className={clsx(
-      "whitespace-no-wrap",
-      "mx-4 sm:mx-2 max-sm:my-2",
-      "text-3xl",
-      className,
-    )}>
-      {children}
-    </Link>
-  );
-}
+import styles from "./NavBar.module.scss";
 
 export const NavBar = () => {
   return (
-    <div className="flex flex-row ml-4">
-      <div className={"flex-none"}>
-        <NavItem to={PageUrls.home()} className={"font-bold"}>
-          <img alt="logo" className="w-64" src={ logoimg }></img>
-        </NavItem>
-      </div>
-      <nav className="flex flex-col justify-center  ml-4 w-full">
-        <div className="flex justify-between border-b-4 border-solid border-accent">
-          <div className={"flex text-center color-text-shadow"}>
-            <NavItem className="color-text" to={PageUrls.home()}>PAST EVENTS</NavItem>
-            <NavItem className="color-text" to={PageUrls.home()}>PARTICIPATING SCHOOLS</NavItem>
-            <NavItem className="color-text" to={PageUrls.home()}>SPONSORS</NavItem>
+    <nav className={styles.nav}>
+      <Link to={PageUrls.home()} className={clsx(styles.navItem, styles.logo)}>
+        <img alt="Joint Jam Logo" src={logoImage}></img>
+      </Link>
+      <div className="flex flex-col justify-center w-full">
+        <div className={styles.navContent}>
+          <div className={styles.centerText}>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}>Past Events</Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}>Participating Schools</Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}>Sponsors</Link>
           </div>
-          <div className={"flex-none"}>
-            <NavItem className="color-text" to={"https://github.com/joint-jam"}><FontAwesomeIcon icon={faGithub}/></NavItem>
-            <NavItem className="color-text" to={PageUrls.home()}><FontAwesomeIcon icon={faItchIo}/></NavItem>
-            <NavItem className="color-text" to={PageUrls.home()}><FontAwesomeIcon icon={faDiscord}/></NavItem>
+          <div className={styles.icons}>
+            <Link to={"https://github.com/joint-jam"} className={clsx(styles.navItem, "color-text")}><FontAwesomeIcon icon={faGithub}/></Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}><FontAwesomeIcon icon={faItchIo}/></Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}><FontAwesomeIcon icon={faDiscord}/></Link>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

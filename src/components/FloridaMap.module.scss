@@ -1,0 +1,82 @@
+.map {
+    position: relative;
+    // Set the map's left margin to negative to allow for elements to go into the map.
+    margin-left: -300px;
+
+    .mapImage {
+        position: relative;
+        width: var(--size);
+        height: var(--size);
+        background: url('/florida.svg') no-repeat center center;
+        background-size: contain;
+    }
+
+    .schoolPin {
+        position: absolute;
+        top: var(--y);
+        left: var(--x);
+        width: var(--size);
+        height: var(--size);
+
+        border-radius: 2rem;
+        background: var(--color2);
+
+        display: inline-block;
+        border-bottom-right-radius: 0;
+        transform: rotate(45deg);
+        transform-origin : bottom right;
+
+        border: 3px solid var(--color1);
+
+        transition: transform 0.5s;
+
+        &::after {
+            content: "";
+            background: var(--color1);
+            width: 50%;
+            height: 50%;
+            border-radius: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+        }
+
+        &:hover {
+            transform: scale(2) rotate(45deg);
+            z-index: 1;
+        }
+    }
+
+    .schoolPinLabel {
+        text-align: left;
+
+        background: black;
+        background-size: 80px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+
+        position: absolute;
+        top: var(--y);
+        right: var(--x);
+        filter: opacity(0%);
+        visibility: hidden;
+        color: white;
+        font-weight: bold;
+        font-size: var(--fsize);
+
+        transition: all 0.5s;
+
+        z-index: 2;
+
+    }
+
+    .schoolPin:hover + .schoolPinLabel {
+        filter: opacity(100%);
+        visibility: visible;
+    }
+}
