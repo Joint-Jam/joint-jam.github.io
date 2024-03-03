@@ -1,0 +1,45 @@
+.countdownContainer {
+    display: flex;
+    justify-content: center;
+
+    .logo {
+        width: 400px;
+        margin-right: 4rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .countdown {
+            display: flex;
+            margin-top: 2rem;
+            justify-content: center;
+
+            .time {
+                margin: 0 1rem;
+
+                .unit {
+                    font-size: 4rem;
+                    line-height: 4rem;
+                    text-align: center;
+                }
+
+                .label {
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+
+        .button {
+            margin: 2rem auto;
+            font-size: 2rem;
+            line-height: 2rem;
+            padding: 1rem 1rem;
+            border: 4px solid theme("colors.accent");
+            border-radius: 25px;
+        }
+    }
+}
+

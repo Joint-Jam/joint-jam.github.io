@@ -1,5 +1,6 @@
 .aboutContainer {
     display: flex;
+    border-bottom: 2px solid theme("colors.accent");
     margin-bottom: 2rem;
 
     .left {
