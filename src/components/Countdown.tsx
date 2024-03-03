@@ -29,7 +29,7 @@ export const Countdown = () => {
     <div className={styles.countdownContainer}>
       <img alt="Joint Jam 2024 Logo" src={logoImage} className={styles.logo}></img>
       <div className={styles.content}>
-        <h2>Joint Jam 2024</h2>
+        <h2 className={styles.title}>Joint Jam 2024</h2>
         <div className={clsx(styles.countdown)}>
           <div className={styles.time}>
             <div className={styles.unit}>{timeLeft.days}</div>
