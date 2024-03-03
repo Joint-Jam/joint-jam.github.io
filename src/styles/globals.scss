@@ -42,12 +42,12 @@ h2 {
 .logo-color {
     background-color: #fff;
     background-size: 100%;
-
     background-clip:text;
     transition: all .5s;
 }
 
-.color-text {
+// Define mixin for common styles
+@mixin striped {
     background: url(/colors.png) repeat;
     background-size: 80px;
     color: #fff;
@@ -55,15 +55,18 @@ h2 {
     -webkit-background-clip: text;
     -moz-background-clip:text;
     background-clip:text;
-    transition: all .5s;
-}
-.color-text:not(.color-text:hover) {
-    transform: scale(0.90);
-    filter: grayscale(100%) brightness(500%);
-    transition: all .5s;
+  }
+
+.striped-text {
+    @include striped;
 }
 
+.striped-link {
+    @include striped;
+    transition: all .5s;
 
-.color-text-shadow {
-    filter: drop-shadow(-0.5px 0.5px 0px rgba(0, 0, 0, 0.75));
+    &:not(:hover) {
+        transform: scale(0.90);
+        filter: grayscale(100%) brightness(500%);
+    }
 }

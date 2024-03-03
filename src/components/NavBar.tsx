@@ -16,14 +16,14 @@ export const NavBar = () => {
       <div className="flex flex-col justify-center w-full">
         <div className={styles.navContent}>
           <div className={styles.centerText}>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}>Past Events</Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}>Participating Schools</Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}>Sponsors</Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Past Events</Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Participating Schools</Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Sponsors</Link>
           </div>
           <div className={styles.icons}>
-            <Link to={"https://github.com/joint-jam"} className={clsx(styles.navItem, "color-text")}><FontAwesomeIcon icon={faGithub}/></Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}><FontAwesomeIcon icon={faItchIo}/></Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "color-text")}><FontAwesomeIcon icon={faDiscord}/></Link>
+            <Link to={"https://github.com/joint-jam"} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faGithub}/></Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faItchIo}/></Link>
+            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faDiscord}/></Link>
           </div>
         </div>
       </div>
