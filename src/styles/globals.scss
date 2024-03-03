@@ -17,8 +17,26 @@ body {
     font-family: "Chopin";
 }
 
-h1, h2 {
+h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+    /* font-weight: 800; */
     font-family: "Gratelos";
+    color: theme('colors.accent');
+    margin: 2rem;
+
+    border-bottom: 2px solid theme('colors.accent');
+    border-bottom-width: 2px;
+    width: fit-content;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+    /* font-weight: 600; */
+    font-family: "Gratelos";
+    color: theme('colors.accent');
 }
 
 .logo-color {
@@ -41,7 +59,7 @@ h1, h2 {
 }
 .color-text:not(.color-text:hover) {
     transform: scale(0.90);
-    filter: grayscale() brightness(500%);
+    filter: grayscale(100%) brightness(500%);
     transition: all .5s;
 }
 

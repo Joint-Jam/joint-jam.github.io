@@ -1,19 +1,9 @@
 .aboutContainer {
     display: flex;
+    margin-bottom: 2rem;
 
     .left {
         h1 {
-            font-size: 8rem;
-            line-height: 8rem;
-            font-weight: 800;
-            color: theme('colors.accent');
-            margin: 2rem;
-
-            border-bottom-color: #65acb4;
-            border-bottom-width: 2px;
-            width: fit-content;
-            padding: 0 1rem;
-
             @media (max-width: 1075px) {
                 margin-left: auto;
                 margin-right: auto;

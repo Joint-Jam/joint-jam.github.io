@@ -25,10 +25,8 @@ const SchoolPin = ({ school, size }: {school: School; size: number}) => {
 
 export const FloridaMap = ({ size }: {size: number}) => {
   return (
-    <div className={styles.map}>
-      <div className={styles.mapImage} style={{
-        "--size": `${size}px`,
-      } as React.CSSProperties}/>
+    <div className={styles.map} style={{ "--neg-half-size": `${-size / 2}px` } as React.CSSProperties}>
+      <div className={styles.mapImage} style={{ "--size": `${size}px` } as React.CSSProperties}/>
 
       {Schools.map((school) => (
         <SchoolPin key={school.key} school={school} size={size}/>

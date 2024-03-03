@@ -1,4 +1,4 @@
-import "@website/styles/globals.css";
+import "@website/styles/globals.scss";
 
 import { Layout } from "@website/components/Layout.tsx";
 import { About } from "@website/pages/About.tsx";

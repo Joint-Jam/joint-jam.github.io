@@ -1,7 +1,7 @@
 .map {
     position: relative;
     // Set the map's left margin to negative to allow for elements to go into the map.
-    margin-left: -300px;
+    margin-left: var(--neg-half-size);
 
     .mapImage {
         position: relative;
