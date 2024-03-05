@@ -1,4 +1,3 @@
-import logoImage from "@website/assets/jj24logo.png";
 import styles from "@website/components/Countdown.module.scss";
 import { CurrentEvent } from '@website/data/Events';
 import clsx from "clsx";
@@ -27,28 +26,28 @@ export const Countdown = () => {
 
   return (
     <div className={styles.countdownContainer}>
-      <img alt="Joint Jam 2024 Logo" src={logoImage} className={styles.logo}></img>
+
       <div className={styles.content}>
-        <h2>Joint Jam 2024</h2>
+        <h2>THE JAM BEGINS IN:</h2>
         <div className={clsx(styles.countdown)}>
           <div className={styles.time}>
-            <div className={styles.unit}>{timeLeft.days}</div>
+            <div className={clsx(styles.unit, "unityYellow")}>{timeLeft.days}</div>
             <div className={styles.label}>Days</div>
           </div>
           <div className={styles.time}>
-            <div className={styles.unit}>{timeLeft.hours}</div>
+            <div className={clsx(styles.unit, "unityGreen")}>{timeLeft.hours}</div>
             <div className={styles.label}>Hours</div>
           </div>
           <div className={styles.time}>
-            <div className={styles.unit}>{timeLeft.minutes}</div>
+            <div className={clsx(styles.unit, "unityPurple")}>{timeLeft.minutes}</div>
             <div className={styles.label}>Minutes</div>
           </div>
           <div className={styles.time}>
-            <div className={styles.unit}>{timeLeft.seconds}</div>
+            <div className={clsx(styles.unit, "unityRed")}>{timeLeft.seconds}</div>
             <div className={styles.label}>Seconds</div>
           </div>
         </div>
-        <Link to={CurrentEvent.itchUrl} className={clsx(styles.button, "striped-link")}>Sign Up!</Link>
+        <Link to={CurrentEvent.itchUrl} className={clsx("striped-button")}>SIGN UP</Link>
       </div>
     </div>
   );

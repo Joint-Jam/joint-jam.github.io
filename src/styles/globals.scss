@@ -11,9 +11,48 @@
     src: url(/Gratelos-Display.ttf);
 }
 
+$unity-yellow: #d1b74c;
+$unity-green: #56895b;
+$unity-red: #803155;
+$unity-purple: #6c53c7;
+
+:root {
+    --unity-yellow: #d1b74c;
+    --unity-green: #56895b;
+    --unity-red: #803155;
+    --unity-purple: #6c53c7;
+    --unity-gradient: linear-gradient( 80deg, #d1b74c, #56895b , #6c53c7, #803155 );
+    --unity-gradient-looping: linear-gradient( 80deg, #d1b74c 12.5%, #56895b , #6c53c7, #803155, #d1b74c 87.5%);
+}
+
+.unityYellow {
+    color: var(--unity-yellow);
+}
+
+.unityGreen {
+    color: var(--unity-green);
+}
+
+.unityPurple {
+    color: var(--unity-purple);
+}
+
+.unityRed {
+    color: var(--unity-red);
+}
+
+html {
+    background:  linear-gradient(
+        #212121,
+        #161616 20rem,
+        #161616 90%,
+        #212121
+    );
+    height: 100%;
+}
 
 body {
-    @apply bg-background-dark text-text-dark;
+    @apply text-text-dark;
     font-family: "Chopin";
 }
 
@@ -25,8 +64,10 @@ h1 {
     color: theme('colors.accent');
     margin: 2rem;
 
-    border-bottom: 2px solid theme('colors.accent');
-    border-bottom-width: 2px;
+    /*
+        border-bottom: 2px solid theme('colors.accent');
+        border-bottom-width: 2px;
+    */
     width: fit-content;
     padding: 0 1rem;
 }
@@ -47,10 +88,19 @@ h2 {
 }
 
 // Define mixin for common styles
+
 @mixin striped {
-    background: url(/colors.png) repeat;
+    background: var(--unity-gradient-looping) repeat;
     background-size: 80px;
-    color: #fff;
+}
+
+.striped {
+    @include striped;
+}
+
+@mixin striped-text {
+    @include striped;
+
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip:text;
@@ -58,11 +108,11 @@ h2 {
   }
 
 .striped-text {
-    @include striped;
+    @include striped-text;
 }
 
 .striped-link {
-    @include striped;
+    @include striped-text;
     transition: all .5s;
 
     &:not(:hover) {
@@ -70,3 +120,30 @@ h2 {
         filter: grayscale(100%) brightness(500%);
     }
 }
+
+.striped-button {
+        margin: 2rem auto;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 1rem 1rem;
+        border-radius: 25px;
+
+        border: transparent 4PX solid; /*2*/
+        font-weight: 800;
+
+        color: black;
+
+        transform: scale(1.2);
+
+        &:not(:hover) {
+
+            background: transparent;
+            color: gray;
+            border: gray 4px solid;
+            transform: scale(0.90);
+            font-weight: 1600;
+            transition: all .5s;
+        }
+        background: var(--unity-gradient) border-box; /*3*/
+        transition: all .5s;
+    }

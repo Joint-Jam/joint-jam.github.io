@@ -1,3 +1,9 @@
+.centerContainer {
+    border-bottom: 2px solid theme("colors.accent");
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
 .aboutContainer {
     display: flex;
     border-bottom: 2px solid theme("colors.accent");

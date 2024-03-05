@@ -1,3 +1,4 @@
+import { Footer } from "@website/components/Footer.tsx";
 import { NavBar } from "@website/components/NavBar.tsx";
 import { Outlet } from "react-router-dom";
 
@@ -22,7 +23,9 @@ export const Layout = () => {
           <Outlet/>
         </div>
       </main>
-      <footer/>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )
 }

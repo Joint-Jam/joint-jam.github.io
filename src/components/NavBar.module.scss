@@ -13,9 +13,14 @@
         }
     }
 
+    .transparent {
+        color: transparent;
+    }
+
     .logo {
         flex: none;
         width: 12rem;
+        margin: 1rem;
 
         @media (max-width: 1229px) {
             display: none;

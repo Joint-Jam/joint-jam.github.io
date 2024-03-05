@@ -37,8 +37,15 @@
             font-size: 2rem;
             line-height: 2rem;
             padding: 1rem 1rem;
-            border: 4px solid theme("colors.accent");
+            border: 4px solid;
             border-radius: 25px;
+
+            border: 10px solid transparent; /*2*/
+            background: var(--unity-gradient) border-box; /*3*/
+            -webkit-mask: /*4*/
+               linear-gradient(#fff 0 0) padding-box, 
+               linear-gradient(#fff 0 0);
+            color: black;
         }
     }
 }

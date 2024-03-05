@@ -6,18 +6,31 @@ import styles from "./Home.module.scss";
 export const Home = () => {
   return (
     <div>
+      <div className={styles.centerContainer}>
+        <Countdown/>
+      </div>
       <div className={styles.aboutContainer}>
         <div className={styles.left}>
-          <h1>Joint Jam</h1>
+          <h1><span className="italic">48 Hours...</span></h1>
           <p className="mb-4 text-2xl text-white">
-            I'm baby jOMO viral photo booth, enim pariatur narwhal cliche same tbh coloring book authentic single-origin coffee tonx. Aliquip blue bottle la croix pug actually fugiat lorem affogato Brooklyn. Incididunt lumbersexual quinoa everyday carry, aesthetic schlitz dolore umami. Nulla woke in, art party bushwick everyday carry cupidatat mlkshk. Sustainable solarpunk chicharrones pitchfork meditation. Enim gorpcore DIY pabst intelligentsia, gluten-free pour-over slow-carb. Dolor veniam sint, franzen in jean shorts green juice lo-fi aesthetic glossier intelligentsia.
+          ...is how much time student game developers at universities across Florida have to make an entire video game each year. Often, the code is terrible. Even the cut corners are visible, and low-rez. The designs make little sense. But out of thin air... <span className="striped-text">a video game.</span>
+            <br></br><br></br>
+          Joint Jam '24 is a combined game jam between the game development clubs at USF, UCF, FSU, ERAU, and UF for all game developers! 
+            <br></br><br></br>
+          For the last three years, Joint Jam has been the competition where students all across Florida have showed their skills and tested their mettle.
+            <br></br><br></br>
+          So far:
+            <ul>
+              <li>- [x amount] of games have been made</li>
+              <li>- [y people] participants have joined</li>
+              <li>- a third statistic</li>
+            </ul>  
           </p>
         </div>
         <div className={styles.right}>
           <FloridaMap size={600}/>
         </div>
       </div>
-      <Countdown/>
     </div>
   )
 }
