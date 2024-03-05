@@ -36,10 +36,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --reporter=append-only
 
-      - name: Run linter
+      - name: Lint
         run: pnpm run lint
 
-      - name: Run linter
+      - name: Build
         run: pnpm run build
 
       - name: Deploy
