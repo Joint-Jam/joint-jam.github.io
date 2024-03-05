@@ -28,7 +28,7 @@ export const Countdown = () => {
     <div className={styles.countdownContainer}>
 
       <div className={styles.content}>
-        <h2>THE JAM BEGINS IN:</h2>
+        <h2 className={styles.title}>THE JAM BEGINS IN:</h2>
         <div className={clsx(styles.countdown)}>
           <div className={styles.time}>
             <div className={clsx(styles.unit, "unityYellow")}>{timeLeft.days}</div>

@@ -5,4 +5,5 @@ export declare const countdownContainer: string;
 export declare const label: string;
 export declare const logo: string;
 export declare const time: string;
+export declare const title: string;
 export declare const unit: string;

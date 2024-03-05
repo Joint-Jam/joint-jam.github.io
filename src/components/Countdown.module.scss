@@ -5,11 +5,26 @@
     .logo {
         width: 400px;
         margin-right: 4rem;
+
+        @media (max-width: 999px) {
+            display: none;
+        }
     }
 
     .content {
         display: flex;
         flex-direction: column;
+
+        .title {
+            @media (max-width: 999px) {
+                text-align: center;
+            }
+
+            @media (max-width: 535px) {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
 
         .countdown {
             display: flex;
@@ -23,6 +38,11 @@
                     font-size: 4rem;
                     line-height: 4rem;
                     text-align: center;
+
+                    @media (max-width: 535px) {
+                        font-size: 3rem;
+                        line-height: 3rem;
+                    }
                 }
 
                 .label {
