@@ -4,4 +4,5 @@ export declare const logo: string;
 export declare const nav: string;
 export declare const navContent: string;
 export declare const navItem: string;
+export declare const navLeft: string;
 export declare const transparent: string;

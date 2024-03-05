@@ -12,7 +12,7 @@ export const NavBar = () => {
     <nav className={styles.nav}>
       {/* this is horrible and really bad someone please destroy this */}
       <div className="flex flex-col justify-center w-10">
-        <div className={styles.navContent}>
+        <div className={styles.navLeft}>
           <Link to={PageUrls.home()} className={clsx(styles.navItem, styles.transparent)}>. </Link>
         </div>
       </div>

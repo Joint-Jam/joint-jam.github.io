@@ -27,6 +27,19 @@
         }
     }
 
+    .navLeft {
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 4px solid theme("colors.accent");
+
+        @media (max-width: 1229px) {
+            display: none;
+            width: none;
+            margin: none;
+        }
+    }
+
     .navContent {
         display: flex;
         justify-content: space-between;
