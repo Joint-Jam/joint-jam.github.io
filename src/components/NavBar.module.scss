@@ -31,7 +31,7 @@
         display: flex;
         justify-content: space-between;
 
-        border-bottom: 4px solid theme("colors.accent");
+        border-bottom: 4px solid var(--accent);
 
         @media (max-width: 1229px) {
             display: none;
@@ -44,7 +44,7 @@
         display: flex;
         justify-content: space-between;
 
-        border-bottom: 4px solid theme("colors.accent");
+        border-bottom: 4px solid var(--accent);
 
         @media (max-width: 1005px) {
             width: 100%;
