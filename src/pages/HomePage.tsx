@@ -1,9 +1,9 @@
 import { Countdown } from "@website/components/Countdown";
 import { FloridaMap } from "@website/components/FloridaMap";
 
-import styles from "./Home.module.scss";
+import styles from "./HomePage.module.scss";
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <div>
       <div className={styles.centerContainer}>

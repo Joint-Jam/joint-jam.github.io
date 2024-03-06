@@ -1,15 +1,13 @@
 import "@website/styles/globals.scss";
 
 import { Layout } from "@website/components/Layout.tsx";
-import { About } from "@website/pages/About.tsx";
-import { Home } from "@website/pages/Home.tsx";
+import { HomePage } from "@website/pages/HomePage";
 import { createHashRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
 const router = createHashRouter(
   createRoutesFromElements(
     <Route element={<Layout/>}>
-      <Route path={"/"} element={<Home/>}/>
-      <Route path={"/about"} element={<About/>}/>
+      <Route path={"/"} element={<HomePage/>}/>
     </Route>,
   ),
 );
