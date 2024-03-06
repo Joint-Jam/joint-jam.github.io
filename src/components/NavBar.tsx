@@ -1,6 +1,7 @@
 import { faDiscord, faGithub, faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logoImage from "@website/assets/jointJamLogo.svg";
+import { CurrentEvent } from "@website/data/Events";
 import { PageUrls } from "@website/data/PageUrls.ts";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
@@ -27,9 +28,9 @@ export const NavBar = () => {
             <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Sponsors</Link>
           </div>
           <div className={styles.icons}>
-            <Link to={"https://github.com/joint-jam"} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faGithub}/></Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faItchIo}/></Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faDiscord}/></Link>
+            <Link to={PageUrls.external.github()} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faGithub}/></Link>
+            <Link to={CurrentEvent.itchUrl} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faItchIo}/></Link>
+            <Link to={PageUrls.external.discord()} className={clsx(styles.navItem, "striped-link")}><FontAwesomeIcon icon={faDiscord}/></Link>
           </div>
         </div>
       </div>

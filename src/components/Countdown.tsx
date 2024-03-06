@@ -1,5 +1,6 @@
 import styles from "@website/components/Countdown.module.scss";
 import { CurrentEvent } from '@website/data/Events';
+import { PageUrls } from "@website/data/PageUrls";
 import clsx from "clsx";
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
@@ -26,9 +27,8 @@ export const Countdown = () => {
 
   return (
     <div className={styles.countdownContainer}>
-
       <div className={styles.content}>
-        <h2 className={styles.title}>THE JAM BEGINS IN:</h2>
+        <h2 className={styles.title}>The Jam Begins in</h2>
         <div className={clsx(styles.countdown)}>
           <div className={styles.time}>
             <div className={clsx(styles.unit, "unityYellow")}>{timeLeft.days}</div>
@@ -47,7 +47,10 @@ export const Countdown = () => {
             <div className={styles.label}>Seconds</div>
           </div>
         </div>
-        <Link to={CurrentEvent.itchUrl} className={clsx("striped-button")}>SIGN UP</Link>
+        <div className={styles.buttons}>
+          <Link to={CurrentEvent.itchUrl} className={clsx("striped-button")}>Sign Up on Itch.io</Link>
+          <Link to={PageUrls.external.discord()} className={clsx("striped-button")}>Join the Discord</Link>
+        </div>
       </div>
     </div>
   );

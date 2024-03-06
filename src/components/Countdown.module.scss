@@ -16,9 +16,7 @@
         flex-direction: column;
 
         .title {
-            @media (max-width: 999px) {
-                text-align: center;
-            }
+            text-align: center;
 
             @media (max-width: 535px) {
                 font-size: 4rem;
@@ -52,20 +50,11 @@
             }
         }
 
-        .button {
-            margin: 2rem auto;
-            font-size: 2rem;
-            line-height: 2rem;
-            padding: 1rem 1rem;
-            border: 4px solid;
-            border-radius: 25px;
-
-            border: 10px solid transparent; /*2*/
-            background: var(--unity-gradient) border-box; /*3*/
-            -webkit-mask: /*4*/
-               linear-gradient(#fff 0 0) padding-box, 
-               linear-gradient(#fff 0 0);
-            color: black;
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 2rem;
         }
     }
 }

@@ -11,21 +11,16 @@ export const Home = () => {
       </div>
       <div className={styles.aboutContainer}>
         <div className={styles.left}>
-          <h1><span className="italic">48 Hours...</span></h1>
-          <p className="mb-4 text-2xl text-white">
-          ...is how much time student game developers at universities across Florida have to make an entire video game each year. Often, the code is terrible. Even the cut corners are visible, and low-rez. The designs can make little sense.
-            <br></br><br></br>
-          But out of thin air... <span className="striped-text">a video game.</span>
-            <br></br><br></br>
-          Joint Jam '24 is a combined game jam between the game development clubs at USF, UCF, FSU, ERAU, and UF for all game developers! 
-            <br></br><br></br>
-          So far:
-            <ul>
-              <li>- [x amount] of games have been made</li>
-              <li>- [y people] participants have joined</li>
-              <li>- a third statistic</li>
-            </ul>  
-          </p>
+          <h2>48 Hours...</h2>
+          <p>...is how much time student game developers across Florida have to make a video game. Often the code is rushed, the designs are low-rez, and the cut corners are visible.</p>
+          <p>But out of a weekend of hard work... <span className={"striped-text"}>a video game</span>.</p>
+          <p>Joint Jam '24 is a game jam hosted by the game development clubs across five Florida universities. It is open for all game developers to join.</p>
+          <p>So far</p>
+          <ul>
+            <li>[x amount] of games have been made</li>
+            <li>[y people] participants have joined</li>
+            <li>across 3 consecutive years.</li>
+          </ul>
         </div>
         <div className={styles.right}>
           <FloridaMap size={600}/>

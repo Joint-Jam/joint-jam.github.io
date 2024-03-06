@@ -1,4 +1,4 @@
-export declare const button: string;
+export declare const buttons: string;
 export declare const content: string;
 export declare const countdown: string;
 export declare const countdownContainer: string;

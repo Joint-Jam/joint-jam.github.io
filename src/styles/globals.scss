@@ -11,11 +11,6 @@
     src: url(/Gratelos-Display.ttf);
 }
 
-$unity-yellow: #d1b74c;
-$unity-green: #56895b;
-$unity-red: #803155;
-$unity-purple: #6c53c7;
-
 :root {
     --unity-yellow: #d1b74c;
     --unity-green: #56895b;
@@ -23,6 +18,9 @@ $unity-purple: #6c53c7;
     --unity-purple: #6c53c7;
     --unity-gradient: linear-gradient( 80deg, #d1b74c, #56895b , #6c53c7, #803155 );
     --unity-gradient-looping: linear-gradient( 80deg, #d1b74c 12.5%, #56895b , #6c53c7, #803155, #d1b74c 87.5%);
+    --text-light: #f5f5f5;
+    --text-dark: #767676;
+    --accent: #65acb4;
 }
 
 .unityYellow {
@@ -52,22 +50,17 @@ html {
 }
 
 body {
-    @apply text-text-dark;
     font-family: "Chopin";
+    color: var(--text-light)
 }
 
 h1 {
     font-size: 8rem;
     line-height: 8rem;
-    /* font-weight: 800; */
     font-family: "Gratelos";
     color: theme('colors.accent');
     margin: 2rem;
 
-    /*
-        border-bottom: 2px solid theme('colors.accent');
-        border-bottom-width: 2px;
-    */
     width: fit-content;
     padding: 0 1rem;
 }
@@ -75,7 +68,6 @@ h1 {
 h2 {
     font-size: 6rem;
     line-height: 6rem;
-    /* font-weight: 600; */
     font-family: "Gratelos";
     color: theme('colors.accent');
 }
@@ -86,8 +78,6 @@ h2 {
     background-clip:text;
     transition: all .5s;
 }
-
-// Define mixin for common styles
 
 @mixin striped {
     background: var(--unity-gradient-looping) repeat;
@@ -102,10 +92,8 @@ h2 {
     @include striped;
 
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip:text;
-    background-clip:text;
-  }
+    background-clip: text;
+}
 
 .striped-text {
     @include striped-text;
@@ -122,28 +110,21 @@ h2 {
 }
 
 .striped-button {
-        margin: 2rem auto;
-        font-size: 2rem;
-        line-height: 2rem;
-        padding: 1rem 1rem;
-        border-radius: 25px;
+    @include striped-text;
 
-        border: transparent 4PX solid; /*2*/
-        font-weight: 800;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 25px;
 
-        color: black;
+    border: var(--text-light) 2px solid;
 
-        transform: scale(1.2);
-
-        &:not(:hover) {
-
-            background: transparent;
-            color: gray;
-            border: gray 4px solid;
-            transform: scale(0.90);
-            font-weight: 1600;
-            transition: all .5s;
-        }
-        background: var(--unity-gradient) border-box; /*3*/
+    &:not(:hover) {
+        color: var(--text-light);
+        transform: scale(0.90);
         transition: all .5s;
+        filter: grayscale(100%) brightness(500%);
     }
+
+    transition: all .5s;
+}

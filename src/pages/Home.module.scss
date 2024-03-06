@@ -1,16 +1,18 @@
 .centerContainer {
-    border-bottom: 2px solid theme("colors.accent");
+    border-bottom: 2px solid var(--text-dark);
     padding-bottom: 4rem;
     margin-bottom: 2rem;
 }
 
 .aboutContainer {
     display: flex;
-    border-bottom: 2px solid theme("colors.accent");
     margin-bottom: 2rem;
 
     .left {
-        h1 {
+        h2 {
+            font-style: italic;
+            margin: 2rem 0 1rem 2rem;
+
             @media (max-width: 1075px) {
                 margin-left: auto;
                 margin-right: auto;
@@ -21,6 +23,17 @@
                 line-height: 6rem;
                 padding: 0rem;
             }
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            font-size: 1.5rem;
+            list-style-type: circle;
+            margin-left: 2rem;
         }
     }
 
