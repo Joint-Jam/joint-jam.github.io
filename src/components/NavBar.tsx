@@ -24,7 +24,7 @@ export const NavBar = () => {
         <div className={styles.navContent}>
           <div className={styles.centerText}>
             <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Past Events</Link>
-            <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Participating Schools</Link>
+            <Link to={PageUrls.schools()} className={clsx(styles.navItem, "striped-link")}>Participating Schools</Link>
             <Link to={PageUrls.home()} className={clsx(styles.navItem, "striped-link")}>Sponsors</Link>
           </div>
           <div className={styles.icons}>
