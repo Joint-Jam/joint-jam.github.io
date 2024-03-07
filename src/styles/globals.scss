@@ -73,6 +73,13 @@ h2 {
     color: var(--accent);
 }
 
+h3 {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-family: "Gratelos";
+    color: var(--accent);
+}
+
 .logo-color {
     background-color: #fff;
     background-size: 100%;
@@ -113,9 +120,11 @@ h2 {
 .striped-button {
     @include striped-text;
 
+    display: inline-block;
+
     font-size: 2rem;
     line-height: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 25px;
 
     border: var(--text-light) 2px solid;
