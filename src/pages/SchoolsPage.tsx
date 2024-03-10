@@ -8,7 +8,7 @@ export const SchoolsPage = () => {
     <div>
       <h1>Participating Schools</h1>
       {Schools.sort((a, b) => a.club.name.localeCompare(b.club.name)).map((school) => (
-        <div key={school.key} className={styles.school}>
+        <div key={school.key} id={school.key} className={styles.school}>
           <img src={school.club.logo} alt={school.club.name} className={styles.logo}/>
           <div>
             <h3>{school.club.name}</h3>

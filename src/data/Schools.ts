@@ -8,6 +8,7 @@ export interface School {
     logo: string;
     websiteUrl?: string;
     discordUrl?: string;
+    itchUrl?: string;
   };
 }
 
@@ -18,8 +19,9 @@ export const Schools: School[] = [
     colors: [ "#FFC423", "#00549F" ],
     mapPos: [ 0.775, 0.25 ],
     club: {
-      name: "ERAU Game Development Club",
+      name: "ERAU Game Dev Club",
       logo: "/schools/erau-gdc.png",
+      itchUrl: "https://erau-gdc.itch.io/",
     },
   },
   {
