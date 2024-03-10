@@ -21,7 +21,18 @@ export default {
         1: "1px",
       },
       colors: {
-
+        "unity-yellow": {
+          "600": "var(--unity-yellow)"
+        },
+        "unity-green": {
+          "600": "var(--unity-green)"
+        },
+        "unity-purple": {
+          "600": "var(--unity-purple)"
+        },
+        "unity-red": {
+          "600": "var(--unity-red)"
+        },
       }
     },
   },
