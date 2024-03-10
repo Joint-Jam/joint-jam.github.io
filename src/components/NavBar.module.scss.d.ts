@@ -1,8 +1,7 @@
-export declare const centerText: string;
-export declare const icons: string;
+export declare const after: string;
+export declare const content: string;
+export declare const left: string;
+export declare const link: string;
 export declare const logo: string;
-export declare const nav: string;
-export declare const navContent: string;
-export declare const navItem: string;
-export declare const navLeft: string;
-export declare const transparent: string;
+export declare const nav2: string;
+export declare const right: string;
