@@ -7,4 +7,20 @@
         height: 10rem;
         margin-right: 2rem;
     }
+
+    .info {
+        color: var(--text-dark);
+        font-style: italic;
+    }
+
+    .links {
+        display: flex;
+
+        .link {
+            padding-top: 1rem;
+            padding-right: 1rem;
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
 }
