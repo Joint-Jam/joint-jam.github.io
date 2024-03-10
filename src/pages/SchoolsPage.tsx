@@ -13,24 +13,22 @@ export const SchoolsPage = () => {
             className={"flex flex-row pt-8"}
           >
             <div className={"relative flex aspect-square w-48"}>
-              <div className={"flex grow bg-[#1c2e30] rounded-l-full p-2"}>
+              <div className={"flex grow bg-[#0c292d] rounded-l-full p-2"}>
                 <div className={"flex grow bg-[#67abb4] p-1 rounded-full"}>
-                  <div className={"flex grow bg-neutral-900 rounded-full"}>
-                    <img
-                      className={"w-full aspect-square rounded-full"}
-                      src={school.club.logo}
-                      alt={school.club.name}
-                    />
-                  </div>
+                  <img
+                    className={"w-full aspect-square rounded-full"}
+                    src={school.club.logo}
+                    alt={school.club.name}
+                  />
                 </div>
               </div>
             </div>
 
             <div
-              className={"flex flex-row bg-neutral-900 flex-grow"}
+              className={"flex flex-row bg-neutral-925 flex-grow"}
             >
               <div
-                className={"flex flex-col bg-neutral-900 p-4"}
+                className={"flex flex-col p-4"}
               >
                 <Heading className={"text-6xl"}>{school.club.name}</Heading>
                 <p>{school.name}</p>
@@ -39,7 +37,7 @@ export const SchoolsPage = () => {
               <div className={"flex-grow"}/>
 
               <div
-                className={"flex flex-col bg-[#1c2e30] p-4 w-36 text-center"}
+                className={"flex flex-col bg-[#0c292d] p-4 w-36 text-center"}
               >
                 {school.club.urls.map(url => (
                   <Link key={url.name} to={url.url} className={"text-xl pb-2"}>
