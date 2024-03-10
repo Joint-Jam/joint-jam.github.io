@@ -11,22 +11,33 @@ export const SchoolsPage = () => {
       <Heading>Participating Schools</Heading>
       {Schools.sort((a, b) => a.club.name.localeCompare(b.club.name)).map((school) => (
         <HeadingLevel key={school.key}>
-          <div id={school.key} className={styles.school}>
-            <img src={school.club.logo} alt={school.club.name} className={styles.logo}/>
-            <div>
-              <div>
-                <Heading>{school.club.name}</Heading>
-                <p className={styles.info}>{school.name}</p>
-              </div>
-              <div>
-                <div className={styles.links}>
-                  {school.club.urls.map(url => (
-                    <Link key={url.name} to={url.url} className={clsx(styles.link, "striped-link")}>
-                      {url.icon}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+          <div
+            id={school.key}
+            className={styles.school}
+          >
+            <img
+              className={styles.logo}
+              src={school.club.logo}
+              alt={school.club.name}
+            />
+
+            <div
+              className={styles.left}
+            >
+              <Heading>{school.club.name}</Heading>
+              <p>{school.name}</p>
+            </div>
+
+            <div className={styles.expand}/>
+
+            <div
+              className={styles.links}
+            >
+              {school.club.urls.map(url => (
+                <Link key={url.name} to={url.url} className={clsx(styles.link, "striped-link")}>
+                  {url.icon} {url.name}
+                </Link>
+              ))}
             </div>
           </div>
         </HeadingLevel>

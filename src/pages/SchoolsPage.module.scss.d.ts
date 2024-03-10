@@ -1,4 +1,5 @@
-export declare const info: string;
+export declare const expand: string;
+export declare const left: string;
 export declare const link: string;
 export declare const links: string;
 export declare const logo: string;

@@ -1,5 +1,6 @@
 .school {
     display: flex;
+    flex-direction: row;
     padding: 2rem;
 
     .logo {
@@ -8,19 +9,23 @@
         margin-right: 2rem;
     }
 
-    .info {
-        color: var(--text-dark);
-        font-style: italic;
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expand {
+        @apply flex-grow
     }
 
     .links {
         display: flex;
+        flex-direction: column;
+        justify-self: end;
 
         .link {
-            padding-top: 1rem;
-            padding-right: 1rem;
-            font-size: 3rem;
-            line-height: 3rem;
+            font-size: 2rem;
+            font-weight: 600;
         }
     }
 }
