@@ -21,10 +21,7 @@ export default {
         1: "1px",
       },
       colors: {
-        neutral: {
-          ...defaultColors.neutral,
-          "925": "#101010"
-        }
+
       }
     },
   },

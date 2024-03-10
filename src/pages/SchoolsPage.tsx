@@ -25,7 +25,7 @@ export const SchoolsPage = () => {
             </div>
 
             <div
-              className={"flex flex-row bg-neutral-925 flex-grow"}
+              className={"flex flex-row bg-neutral-900 flex-grow"}
             >
               <div
                 className={"flex flex-col p-4"}
