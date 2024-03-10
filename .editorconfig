@@ -1,0 +1,37 @@
+root = true
+
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+tab_width = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.css]
+indent_size = 2
+tab_width = 2
+
+[*.scss] # This really should be indent 2 to match .css
+indent_size = 4
+tab_width = 4
+
+[{*.ats,*.cts,*.mts,*.ts,*.tsx}]
+indent_size = 2
+tab_width = 2
+
+[{*.gs,*.cjs,*.js,*.jsx}]
+indent_size = 2
+tab_width = 2
+
+[{*.json,*.json5,.babelrc,.eslintrc,.stylelintrc,bowerrc,jest.config}]
+indent_size = 2
+tab_width = 2
+
+[{*.htm,*.html,*.ng,*.sht,*.shtm,*.shtml,*.svg}]
+indent_size = 2
+tab_width = 2
+
+[{*.yaml,*.yml}]
+indent_size = 2
+tab_width = 2
