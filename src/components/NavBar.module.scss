@@ -1,18 +1,24 @@
 .nav2 {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 
     .logo {
+        padding-right: 2rem;
+    }
+
+    .logo, .after {
+        display: flex;
         width: 12rem;
         margin-left: auto;
-        display: flex;
-        padding-right: 2rem;
+
+        @media screen and (max-width: 1600px) {
+            display: none;
+        }
     }
 
     .content {
         min-width: 1200px;
-        width: 1200px;
-        max-width: 1200px;
         display: flex;
         margin: auto 0;
         justify-content: space-between;
@@ -23,18 +29,37 @@
             display: flex;
             align-items: center;
 
+            .linkContainer {
+                display: flex;
+            }
+
             .link {
                 display: block;
                 margin: 0 1rem;
                 font-size: 2rem;
+                line-height: 2rem;
                 white-space: nowrap;
                 text-transform: uppercase;
+            }
+
+            .home {
+                margin: 0 1rem;
+
+                font-family: "Gratelos";
+
+                font-size: 3rem;
+                line-height: 3rem;
+
+                color: var(--accent);
+
+                @media screen and (min-width: 1600px) {
+                    display: none;
+                }
             }
         }
     }
 
-    .after {
-        margin-left: auto;
-        width: 12rem;
+    @media screen and (max-width: 1600px) {
+        margin-top: 1rem;
     }
 }

@@ -16,9 +16,12 @@ export const NavBar = () => {
       </Link>
       <div className={styles.content}>
         <div className={styles.left}>
-          <Link to={PageUrls.home()} className={clsx(styles.link, "striped-link")}>Past Events</Link>
-          <Link to={PageUrls.schools()} className={clsx(styles.link, "striped-link")}>Participating Schools</Link>
-          <Link to={PageUrls.home()} className={clsx(styles.link, "striped-link")}>Sponsors</Link>
+          <Link to={PageUrls.home()} className={clsx(styles.home)}>Joint Jam</Link>
+          <div className={styles.linkContainer}>
+            <Link to={PageUrls.home()} className={clsx(styles.link, "striped-link")}>Past Events</Link>
+            <Link to={PageUrls.schools()} className={clsx(styles.link, "striped-link")}>Participating Schools</Link>
+            <Link to={PageUrls.home()} className={clsx(styles.link, "striped-link")}>Sponsors</Link>
+          </div>
         </div>
         <div className={styles.right}>
           <Link to={PageUrls.external.github()} className={clsx(styles.link, "striped-link")}><FontAwesomeIcon icon={faGithub}/></Link>
