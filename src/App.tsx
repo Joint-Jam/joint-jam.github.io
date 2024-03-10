@@ -1,5 +1,6 @@
 import "@website/styles/globals.scss";
 
+import { HeadingLevel } from "@ariakit/react";
 import { Layout } from "@website/components/Layout.tsx";
 import { PageUrls } from "@website/data/PageUrls";
 import { HomePage } from "@website/pages/HomePage";
@@ -17,6 +18,8 @@ const router = createHashRouter(
 
 export const App = () => {
   return (
-    <RouterProvider router={router}/>
+    <HeadingLevel>
+      <RouterProvider router={router}/>
+    </HeadingLevel>
   );
 };
