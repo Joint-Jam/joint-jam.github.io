@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const SchoolsPage = () => {
   return (
-    <div className={"bg-neutral-950"}>
+    <div>
       <Heading>Participating Schools</Heading>
       {Schools.sort((a, b) => a.club.name.localeCompare(b.club.name)).map((school) => (
         <HeadingLevel key={school.key}>
@@ -13,7 +13,7 @@ export const SchoolsPage = () => {
             className={"flex flex-row pt-8"}
           >
             <div className={"relative flex aspect-square w-48"}>
-              <div className={"flex grow bg-primary-800 rounded-l-full p-2"}>
+              <div className={"flex grow bg-primary-700 rounded-l-full p-2"}>
                 <div className={"flex grow bg-primary-500 p-1 rounded-full"}>
                   <img
                     className={"w-full aspect-square rounded-full"}
@@ -25,7 +25,7 @@ export const SchoolsPage = () => {
             </div>
 
             <div
-              className={"flex flex-row bg-neutral-900 flex-grow"}
+              className={"flex flex-row bg-neutral-950 flex-grow"}
             >
               <div
                 className={"flex flex-col p-4"}
