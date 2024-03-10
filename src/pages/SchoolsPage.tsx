@@ -13,8 +13,8 @@ export const SchoolsPage = () => {
             className={"flex flex-row pt-8"}
           >
             <div className={"relative flex aspect-square w-48"}>
-              <div className={"flex grow bg-[#0c292d] rounded-l-full p-2"}>
-                <div className={"flex grow bg-[#67abb4] p-1 rounded-full"}>
+              <div className={"flex grow bg-primary-800 rounded-l-full p-2"}>
+                <div className={"flex grow bg-primary-500 p-1 rounded-full"}>
                   <img
                     className={"w-full aspect-square rounded-full"}
                     src={school.club.logo}
@@ -37,7 +37,7 @@ export const SchoolsPage = () => {
               <div className={"flex-grow"}/>
 
               <div
-                className={"flex flex-col bg-[#0c292d] p-4 w-36 text-center"}
+                className={"flex flex-col bg-primary-800 p-4 w-36 text-center"}
               >
                 {school.club.urls.map(url => (
                   <Link key={url.name} to={url.url} className={"text-xl pb-2"}>

@@ -22,18 +22,22 @@ export default {
       },
       colors: {
         "unity-yellow": {
-          "600": "var(--unity-yellow)"
+          "600": "var(--unity-yellow)",
         },
         "unity-green": {
-          "600": "var(--unity-green)"
+          "600": "var(--unity-green)",
         },
         "unity-purple": {
-          "600": "var(--unity-purple)"
+          "600": "var(--unity-purple)",
         },
         "unity-red": {
-          "600": "var(--unity-red)"
+          "600": "var(--unity-red)",
         },
-      }
+        "primary": {
+          "500": "var(--accent)",
+          "800": "#0c292d",
+        },
+      },
     },
   },
   plugins: [
