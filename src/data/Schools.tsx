@@ -1,15 +1,26 @@
+import { faDiscord, faItchIo } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { ReactNode } from "react";
+
+export interface ClubUrl {
+  name: string;
+  icon: ReactNode;
+  url: string;
+}
+
+export interface Club {
+  name: string;
+  logo: string;
+  urls: ClubUrl[];
+}
+
 export interface School {
   name: string;
   key: string;
   colors: string[];
   mapPos: [ number, number ];
-  club: {
-    name: string;
-    logo: string;
-    websiteUrl?: string;
-    discordUrl?: string;
-    itchUrl?: string;
-  };
+  club: Club;
 }
 
 export const Schools: School[] = [
@@ -21,7 +32,13 @@ export const Schools: School[] = [
     club: {
       name: "ERAU Game Dev Club",
       logo: "/schools/erau-gdc.png",
-      itchUrl: "https://erau-gdc.itch.io/",
+      urls: [
+        {
+          name: "Itch.io",
+          icon: <FontAwesomeIcon icon={faItchIo}/>,
+          url: "https://erau-gdc.itch.io/",
+        },
+      ],
     },
   },
   {
@@ -32,8 +49,18 @@ export const Schools: School[] = [
     club: {
       name: "DevLUp FSU",
       logo: "/schools/devlup-fsu.png",
-      websiteUrl: "https://fsu.devlup.org/",
-      discordUrl: "https://discord.gg/jehBXnYVpR",
+      urls: [
+        {
+          name: "Website",
+          icon: <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>,
+          url: "https://fsu.devlup.org/",
+        },
+        {
+          name: "Discord",
+          icon: <FontAwesomeIcon icon={faDiscord}/>,
+          url: "https://discord.gg/jehBXnYVpR",
+        },
+      ],
     },
   },
   {
@@ -44,6 +71,7 @@ export const Schools: School[] = [
     club: {
       name: "UCF Game Dev Knights",
       logo: "/schools/ucf-gdk.jpeg",
+      urls: [],
     },
   },
   {
@@ -54,6 +82,7 @@ export const Schools: School[] = [
     club: {
       name: "DevLUp UF",
       logo: "/schools/devlup-uf.png",
+      urls: [],
     },
   },
   {
@@ -64,6 +93,7 @@ export const Schools: School[] = [
     club: {
       name: "USF GameDev Club",
       logo: "/schools/usf-gdc.png",
+      urls: [],
     },
   },
 ];
