@@ -5,5 +5,8 @@ export declare const left: string;
 export declare const link: string;
 export declare const linkContainer: string;
 export declare const logo: string;
+export declare const menu: string;
+export declare const menuLabel: string;
+export declare const menuToggle: string;
 export declare const nav2: string;
 export declare const right: string;
