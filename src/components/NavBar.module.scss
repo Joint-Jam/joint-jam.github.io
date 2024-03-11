@@ -1,69 +1,114 @@
-.nav {
+.nav2 {
     display: flex;
-
-    .navItem {
-        margin: 0 1rem;
-        font-size: 2rem;
-        white-space: nowrap;
-        text-transform: uppercase;
-        
-
-        @media (max-width: 1005px) {
-            margin: 0 0.5rem;
-        }
-    }
-
-    .transparent {
-        color: transparent;
-    }
+    justify-content: center;
+    margin-bottom: 2rem;
 
     .logo {
-        flex: none;
+        padding-right: 2rem;
+    }
+
+    .logo, .after {
+        display: flex;
         width: 12rem;
-        margin: 1rem;
+        margin-left: auto;
 
-        @media (max-width: 1229px) {
+        @media screen and (max-width: 1600px) {
             display: none;
         }
     }
 
-    .navLeft {
+    .content {
+        min-width: 1200px;
         display: flex;
+        margin: auto 0;
         justify-content: space-between;
 
         border-bottom: 4px solid var(--accent);
 
-        @media (max-width: 1229px) {
-            display: none;
-            width: none;
-            margin: none;
-        }
-    }
+        .home {
+            margin: 0 1rem;
 
-    .navContent {
-        display: flex;
-        justify-content: space-between;
+            font-family: "Gratelos";
 
-        border-bottom: 4px solid var(--accent);
+            font-size: 3rem;
+            line-height: 3rem;
 
-        @media (max-width: 1005px) {
-            width: 100%;
-            flex-direction: column;
-        }
+            color: var(--accent);
 
-        .centerText {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-
-            @media (max-width: 726px) {
-                flex-direction: column;
+            @media screen and (min-width: 1600px) {
+                display: none;
             }
         }
 
-        .icons {
+        .menu {
             display: flex;
-            justify-content: center;
+
+            .left, .right {
+                display: flex;
+                align-items: center;
+
+                .linkContainer {
+                    display: flex;
+                }
+
+                .link {
+                    display: block;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .menuToggle, .menuLabel {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
+        margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 1215px) {
+        .content {
+            min-width: 100%;
+
+            .menuLabel {
+                display: block;
+                margin-right: 1rem;
+                user-select: none;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .menuToggle:checked ~ .menu {
+                width: 100%;
+                background-color: #212121;
+                margin-top: 4rem;
+                display: block;
+                position: absolute;
+                flex-direction: column;
+                border-bottom: 4px solid var(--text-dark);
+
+                .left {
+                    flex-direction: column;
+                }
+
+                .right {
+                    justify-content: center;
+                }
+
+                .link {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    text-align: center;
+                }
+            }
         }
     }
 }
