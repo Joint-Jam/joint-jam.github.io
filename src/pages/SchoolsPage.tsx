@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const SchoolsPage = () => {
   return (
     <div>
-      <Heading>Participating Schools</Heading>
+      <Heading className={"text-4xl xs:text-5xl sm:text-6xl md:text-7xl m-auto pt-4"}>Participating Schools</Heading>
       {Schools.sort((a, b) => a.club.name.localeCompare(b.club.name)).map((school) => (
         <HeadingLevel key={school.key}>
           <div
