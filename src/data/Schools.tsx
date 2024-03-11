@@ -1,6 +1,7 @@
 import { faDiscord, faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import iconStyles from "@website/styles/Icon.module.scss";
 import type { ReactNode } from "react";
 
 export interface ClubUrl {
@@ -35,7 +36,7 @@ export const Schools: School[] = [
       urls: [
         {
           name: "Itch.io",
-          icon: <FontAwesomeIcon icon={faItchIo}/>,
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faItchIo}/>,
           url: "https://erau-gdc.itch.io/",
         },
       ],
@@ -52,12 +53,12 @@ export const Schools: School[] = [
       urls: [
         {
           name: "Website",
-          icon: <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>,
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faArrowUpRightFromSquare}/>,
           url: "https://fsu.devlup.org/",
         },
         {
           name: "Discord",
-          icon: <FontAwesomeIcon icon={faDiscord}/>,
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faDiscord}/>,
           url: "https://discord.gg/jehBXnYVpR",
         },
       ],
