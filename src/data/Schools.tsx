@@ -1,4 +1,4 @@
-import { faDiscord, faItchIo } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faInstagram, faItchIo } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import iconStyles from "@website/styles/Icon.module.scss";
@@ -72,7 +72,18 @@ export const Schools: School[] = [
     club: {
       name: "UCF Game Dev Knights",
       logo: "/schools/ucf-gdk.jpeg",
-      urls: [],
+      urls: [
+        {
+          name: "Discord",
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faDiscord}/>,
+          url: "https://discord.gg/yNpj6zTrt9",
+        },
+        {
+          name: "Instagram",
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faInstagram}/>,
+          url: "https://www.instagram.com/gamedevknights/",
+        },
+      ],
     },
   },
   {
@@ -83,7 +94,18 @@ export const Schools: School[] = [
     club: {
       name: "DevLUp UF",
       logo: "/schools/devlup-uf.png",
-      urls: [],
+      urls: [
+        {
+          name: "Discord",
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faDiscord}/>,
+          url: "https://discord.gg/FpseMYq2YM",
+        },
+        {
+          name: "Instagram",
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faInstagram}/>,
+          url: "https://www.instagram.com/devlup_uf/",
+        },
+      ],
     },
   },
   {
@@ -94,7 +116,13 @@ export const Schools: School[] = [
     club: {
       name: "USF GameDev Club",
       logo: "/schools/usf-gdc.png",
-      urls: [],
+      urls: [
+        {
+          name: "Discord",
+          icon: <FontAwesomeIcon className={iconStyles.icon} icon={faDiscord}/>,
+          url: "https://discord.gg/PtgUgGw6Ph",
+        },
+      ],
     },
   },
 ];
