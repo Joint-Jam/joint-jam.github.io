@@ -10,6 +10,10 @@ import { Link } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 
 export const NavBar = () => {
+  const hideHamburgerMenu = () => {
+    (document.getElementById("menuToggle") as HTMLInputElement).checked = false;
+  };
+
   return (
     <nav className={styles.nav2}>
       <Link to={PageUrls.home()} className={styles.logo}>
@@ -23,9 +27,9 @@ export const NavBar = () => {
         <label htmlFor="menuToggle" className={styles.menuLabel}><FontAwesomeIcon icon={faBars} size="2x"/></label>
         <div className={styles.menu}>
           <div className={styles.left}>
-            <Link to={PageUrls.home()} className={clsx(styles.link, "striped-link")}>Past Events</Link>
-            <Link to={PageUrls.schools()} className={clsx(styles.link, "striped-link")}>Participating Schools</Link>
-            <Link to={PageUrls.home()} className={clsx(styles.link, "striped-link")}>Sponsors</Link>
+            <Link to={PageUrls.home()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Past Events</Link>
+            <Link to={PageUrls.schools()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Participating Schools</Link>
+            <Link to={PageUrls.home()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Sponsors</Link>
           </div>
           <div className={styles.right}>
             <Link to={PageUrls.external.github()} className={clsx(styles.link, "striped-link")}><FontAwesomeIcon icon={faGithub}/></Link>
