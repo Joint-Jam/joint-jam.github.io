@@ -1,15 +1,17 @@
+export interface EventSubmission {
+  name: string;
+  url: string;
+  logo: string;
+  authors: string[];
+}
+
 export interface Event {
     name: string;
     start: Date;
     end: Date;
     itchUrl: string;
     theme: string;
-    submissions: {
-      name: string;
-      url: string;
-      logo: string;
-      authors: string[];
-    }[];
+    submissions: EventSubmission[];
 }
 
 export const Events: Event[] = [
