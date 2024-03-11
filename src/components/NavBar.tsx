@@ -20,7 +20,7 @@ export const NavBar = () => {
         <img alt="Joint Jam Logo" src={logoImage}></img>
       </Link>
       <div className={styles.content}>
-        <Link to={PageUrls.home()} className={clsx(styles.home)}>Joint Jam</Link>
+        <Link to={PageUrls.home()} onClick={hideHamburgerMenu} className={clsx(styles.home)}>Joint Jam</Link>
         <input type="checkbox" id="menuToggle" className={styles.menuToggle}/>
         {/* TODO: Figure out why this eslint-disable is necessary. I can't get it to not error. */}
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
