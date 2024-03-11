@@ -32,18 +32,15 @@ export const SchoolsPage = () => {
               >
                 <Heading className={"text-6xl"}>{school.club.name}</Heading>
                 <p>{school.name}</p>
-              </div>
-
-              <div className={"flex-grow"}/>
-
-              <div
-                className={"flex flex-col bg-primary-800 p-4 w-36 text-center"}
-              >
-                {school.club.urls.map(url => (
-                  <Link key={url.name} to={url.url} className={"text-xl pb-2"}>
-                    {url.icon} {url.name}
-                  </Link>
-                ))}
+                <ul className={"pt-4"}>
+                  {school.club.urls.map(url => (
+                    <ul key={url.name}>
+                      <Link to={url.url} className={"text-lg pb-2"}>
+                        {url.icon} {url.name}
+                      </Link>
+                    </ul>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
