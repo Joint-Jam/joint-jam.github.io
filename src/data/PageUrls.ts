@@ -4,7 +4,6 @@ export const PageUrls = {
   schools: () => "/schools",
   external: {
     github: () => "https://github.com/joint-jam",
-    // TODO: Add discord url when ready to open the server
-    discord: () => "",
+    discord: () => "https://discord.gg/Ye3S3SYJUm",
   },
 }
