@@ -36,7 +36,7 @@ export const SponsorsPage = () => {
                 </Link>
                 <HeadingLevel>
                   <Heading className={"xs:text-1xl sm:text-2xl md:text-3xl"}>
-                    Prizes
+                    Prize Contributions
                   </Heading>
                   <ul>
                     {sponsor.prizes.map(url => (
