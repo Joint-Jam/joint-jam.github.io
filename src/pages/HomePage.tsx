@@ -14,7 +14,7 @@ export const HomePage = () => {
         <div className={styles.left}>
           <h2>48 Hours...</h2>
           <p>...is how much time student game developers across Florida have to make a video game. Often the code is rushed, the designs are low-rez, and the cut corners are visible.</p>
-          <p>But out of a weekend of hard work... <span className={"striped-text"}>a video game</span>.</p>
+          <p>But out of a weekend of hard work... <span className={"striped-text font-semibold"}>a video game</span>.</p>
           <p>Joint Jam '24 is a game jam hosted by the game development clubs across five Florida universities. It is open for all game developers to join.</p>
           <p>So far</p>
           <ul>

@@ -48,8 +48,8 @@ export const Countdown = () => {
           </div>
         </div>
         <div className={styles.buttons}>
-          <Link to={CurrentEvent.itchUrl} className={clsx("striped-button")}>Sign Up on Itch.io</Link>
-          <Link to={PageUrls.external.discord()} className={clsx("striped-button")}>Join the Discord</Link>
+          <Link to={CurrentEvent.itchUrl} className={clsx("striped-button font-semibold")}>Sign Up on Itch.io</Link>
+          <Link to={PageUrls.external.discord()} className={clsx("striped-button font-semibold")}>Join the Discord</Link>
         </div>
       </div>
     </div>
