@@ -63,7 +63,7 @@ export const Sponsors: Sponsor[] = [
     website: {
       name: "Website",
       icon: <FontAwesomeIcon className={iconStyles.icon} icon={faArrowUpRightFromSquare}/>,
-      url: "https://pizzadoggy.itch.io/",
+      url: "https://www.weloveindies.com",
     },
     prizes: [
       {
