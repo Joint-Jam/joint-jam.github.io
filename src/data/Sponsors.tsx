@@ -22,7 +22,7 @@ export const Sponsors: Sponsor[] = [
   {
     key: "pizza-doggy",
     name: "Pizza Doggy",
-    logo: "https://img.itch.zone/aW1nLzE1MTUzMjczLnBuZw==/80x80%23/VTGZk0.png",
+    logo: "/sponsors/pizza-doggy.png",
     website: {
       name: "Website",
       icon: <FontAwesomeIcon className={iconStyles.icon} icon={faArrowUpRightFromSquare}/>,
@@ -59,7 +59,7 @@ export const Sponsors: Sponsor[] = [
   {
     key: "we-love-indies",
     name: "WeLoveIndies",
-    logo: "https://www.weloveindies.com/_default_upload_bucket/dyn-wli-logo-light.png",
+    logo: "/sponsors/we-love-indies.png",
     website: {
       name: "Website",
       icon: <FontAwesomeIcon className={iconStyles.icon} icon={faArrowUpRightFromSquare}/>,
