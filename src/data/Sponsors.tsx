@@ -58,7 +58,7 @@ export const Sponsors: Sponsor[] = [
   },
   {
     key: "we-love-indies",
-    name: "We Love Indies",
+    name: "WeLoveIndies",
     logo: "https://www.weloveindies.com/_default_upload_bucket/dyn-wli-logo-light.png",
     website: {
       name: "Website",
