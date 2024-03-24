@@ -35,7 +35,7 @@ export const SchoolsPage = () => {
                 <ul className={"pt-3 md:pt-5"}>
                   {school.club.urls.map(url => (
                     <ul key={url.name}>
-                      <Link to={url.url} className={"text-xs sm:text-sm sm:text-md md:text-lg pb-2"}>
+                      <Link to={url.url} className={"text-xs sm:text-sm sm:text-md md:text-lg pb-2"} target={"_blank"}>
                         <span className={"pr-1"}>{url.icon}</span> {url.name}
                       </Link>
                     </ul>
