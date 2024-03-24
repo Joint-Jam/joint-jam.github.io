@@ -12,8 +12,8 @@ export const SponsorsPage = () => {
             id={sponsor.key}
             className={"flex flex-row pt-8"}
           >
-            <div className={"flex flex-shrink-0 bg-neutral-950 md:bg-transparent"}>
-              <div className={"flex grow bg-primary-700 rounded-br-3xl md:rounded-l-full p-2 aspect-square w-24 h-24 md:w-56 md:h-56"}>
+            <div className={"flex flex-shrink-0 bg-neutral-950"}>
+              <div className={"flex grow bg-primary-700 rounded-br-3xl p-2 aspect-square w-24 h-24 md:w-36 md:h-36 lg:w-44 lg:h-44 xl:w-52 xl:h-52"}>
                 <div className={"flex grow bg-primary-500 p-1 rounded-full"}>
                   <img
                     className={"w-full aspect-square rounded-full"}
