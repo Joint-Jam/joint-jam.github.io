@@ -37,22 +37,22 @@ export const Sponsors: Sponsor[] = [
       {
         name: "Retro Fps Kit x3",
         icon: <FontAwesomeIcon className={iconStyles.icon} icon={faItchIo}/>,
-        url: "https://pizzadoggy.itch.io/kidnapper-van",
+        url: "https://pizzadoggy.itch.io/modular-retro-fps-kit",
       },
       {
         name: "PSX Nature Mega Pack x3",
         icon: <FontAwesomeIcon className={iconStyles.icon} icon={faItchIo}/>,
-        url: "https://pizzadoggy.itch.io/kidnapper-van",
+        url: "https://pizzadoggy.itch.io/psx-nature-mega-pack",
       },
       {
         name: "PSX Mega Pack x3",
         icon: <FontAwesomeIcon className={iconStyles.icon} icon={faItchIo}/>,
-        url: "https://pizzadoggy.itch.io/kidnapper-van",
+        url: "https://pizzadoggy.itch.io/psx-mega-pack",
       },
       {
         name: "PSX Bunkers x3",
         icon: <FontAwesomeIcon className={iconStyles.icon} icon={faItchIo}/>,
-        url: "https://pizzadoggy.itch.io/kidnapper-van",
+        url: "https://pizzadoggy.itch.io/psx-bunkers",
       },
     ],
   },
