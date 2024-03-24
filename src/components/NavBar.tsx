@@ -25,11 +25,11 @@ export const NavBar = () => {
         {/* TODO: Figure out why this eslint-disable is necessary. I can't get it to not error. */}
         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label htmlFor="menuToggle" className={styles.menuLabel}><FontAwesomeIcon icon={faBars} size="2x"/></label>
-        <div className={styles.menu}>
+        <div className={clsx(styles.menu)}>
           <div className={styles.left}>
-            <Link to={PageUrls.home()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Past Events</Link>
+            {/* <Link to={PageUrls.home()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Past Events</Link> */}
             <Link to={PageUrls.schools()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Participating Schools</Link>
-            <Link to={PageUrls.home()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Sponsors</Link>
+            <Link to={PageUrls.sponsors()} onClick={hideHamburgerMenu} className={clsx(styles.link, "striped-link")}>Sponsors</Link>
           </div>
           <div className={styles.right}>
             <Link to={PageUrls.external.github()} className={clsx(styles.link, "striped-link")}><FontAwesomeIcon icon={faGithub}/></Link>
