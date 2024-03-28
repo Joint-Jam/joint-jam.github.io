@@ -8,7 +8,7 @@ export const HomePage = () => {
   return (
     <div>
       <div className={styles.centerContainer}>
-        <Countdown/>
+        <Countdown toEnd={false}/>
       </div>
       <div className={styles.aboutContainer}>
         <div className={styles.left}>
