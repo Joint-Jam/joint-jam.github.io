@@ -7,9 +7,6 @@ import styles from "./HomePage.module.scss";
 export const HomePage = () => {
   return (
     <div>
-      <div className={styles.centerContainer}>
-        <Countdown/>
-      </div>
       <div className={styles.aboutContainer}>
         <div className={styles.left}>
           <h2>48 Hours...</h2>
